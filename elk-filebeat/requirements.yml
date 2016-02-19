@@ -1,0 +1,4 @@
+---
+# docker
+- src: https://github.com/DavidWittman/ansible-filebeat
+  name: filebeat

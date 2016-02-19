@@ -1,0 +1,8 @@
+---
+# docker
+- src: https://github.com/weareinteractive/ansible-docker
+  name: docker
+
+# docker-compose
+- src: https://github.com/weareinteractive/ansible-docker-compose
+  name: docker-compose

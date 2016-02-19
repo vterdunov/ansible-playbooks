@@ -1,0 +1,19 @@
+filebeat_config:
+  filebeat:
+    prospectors:
+      - paths:
+          - /var/log/messages
+          - /var/log/*.log
+        input_type: log
+  output:
+    elasticsearch:
+      hosts:
+        - 10.0.6.67:9200
+  logging:
+    to_syslog: false
+    level: info
+    files:
+      path: /var/log/filebeat
+      name: filebeat.log
+      keepfiles: 7
+
